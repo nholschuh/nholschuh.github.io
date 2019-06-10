@@ -1,8 +1,8 @@
 ---
 layout: page
 title: INSTRUCTORS and EVENT COORDINATORS
-permalink: our-team.html
-description: List of contributors to IS2HackWeek
+permalink: showandtell2019.html
+description: The group recommendations from show and tell 2019
 team:
   - - name: Axel Schweiger
       title: Senior Principal Scientist
