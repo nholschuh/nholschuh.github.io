@@ -1,6 +1,6 @@
 ---
 layout: page
-title: INSTRUCTORS and EVENT COORDINATORS
+title: Show and Tell 2019
 permalink: showandtell2019.html
 description: The group recommendations from show and tell 2019
 team:
