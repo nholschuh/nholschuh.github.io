@@ -24,6 +24,9 @@
                         {% for person in row %}
                         <div class="team-column">
                             <figure class="team-card">
+								<table>
+								<tr>
+								<td>
                                 <div class="profile-image">
                                     <img src="{{ person.image_url }}" alt="{{ person.name }}" />
                                 </div>
@@ -37,6 +40,21 @@
                                         {% endif %}
                                     </div>
                                 </figcaption>
+								</td>
+								<td>
+								<h3>READ</h3>
+								{{ person.readname }}
+								</td>
+								<td>
+								<h3>WATCH</h3>
+								{{ person.watchname }}
+								</td>
+								<td>
+								<h3>Listen</h3>
+								{{ person.listenname }}
+								</td>
+								</tr>
+								</table>
                             </figure>
                         </div>
                         {% endfor %}
