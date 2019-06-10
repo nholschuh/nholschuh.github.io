@@ -26,32 +26,38 @@
                             <figure class="team-card">
 								<table>
 								<tr>
-								<td>
-                                <div class="profile-image">
-                                    <img src="{{ person.image_url }}" alt="{{ person.name }}" />
-                                </div>
-                                <figcaption>
-                                    <h3>{{ person.name }}</h3>
-                                    <h5>{{ person.title }}</h5>
-                                    <h5>{{ person.affiliate }}</h5>
-                                    <div class="icons">
-                                        {% if person.github_user %}
-                                        <a href="https://github.com/{{ person.github_user }}" class="icon fa-github"></a>
-                                        {% endif %}
-                                    </div>
-                                </figcaption>
+									<td>
+									<div class="profile-image">
+										<img src="{{ person.image_url }}" alt="{{ person.name }}" />
+									</div>
+									<figcaption>
+										<h3>{{ person.name }}</h3>
+										<h5>{{ person.title }}</h5>
+										<h5>{{ person.affiliate }}</h5>
+										<div class="icons">
+											{% if person.github_user %}
+											<a href="https://github.com/{{ person.github_user }}" class="icon fa-github"></a>
+											{% endif %}
+										</div>
+									</figcaption>
 								</td>
 								<td>
 								<h3>READ</h3>
+								<figcaption>
 								{{ person.readname }}
+								</figcaption>
 								</td>
 								<td>
 								<h3>WATCH</h3>
+								<figcaption>
 								{{ person.watchname }}
+								</figcaption>
 								</td>
 								<td>
 								<h3>Listen</h3>
+								<figcaption>
 								{{ person.listenname }}
+								</figcaption>
 								</td>
 								</tr>
 								</table>
