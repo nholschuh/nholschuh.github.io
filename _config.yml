@@ -1,0 +1,33 @@
+# Site settings
+title: Cryospheric Science with ICESat-2 Hackweek 2019
+email: icesat@uw.edu
+description: Workshop On ICESat-2 Datasets for cryospheric studies <br>
+             University of Washington <br>
+             June 17-21, 2019 <br> <br>
+             Applications are closed. We will inform selected participants shortly!  <br>  <br>
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Homepage tiles
+tiles-source: posts # accepts "posts" or "pages"
+tiles-count: 3
+
+# Misc settings
+featured-image-source:
+
+# Social settings
+500px_url:
+facebook_url:
+github_url: https://github.com/ICESAT-2HackWeek
+gitlab_url:
+googleplus_url:
+instagram_url:
+linkedin_url:
+pinterest_url:
+slack_url: https://ICESat2hackweek.slack.com
+twitter_url:
+email_url: icesat@uw.edu
+
+# Build settings
+markdown: kramdown
+
