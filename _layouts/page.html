@@ -1,75 +1,18 @@
-<!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-{% include head.html %}
+---
+layout: default
+---
+{%- include header.html -%}
 
-<body>
-    {% include header.html %}
-
-    <!-- Main -->
-    <article id="main">
-        <header{% if page.image %} style="background-image: url('{% if site.featured-image-source %}{{ page.image | prepend: site.featured-image-source | absolute_url }}{% else %}{{ "" | absolute_url }}/assets/images/{{ page.image }}{% endif %}');"{% endif %}>
-            <h2>{{ page.title }}</h2>
-            <p>{{ page.description }}</p>
-        </header>
-        <section class="wrapper style5">
-            <div class="inner">
-                {% if page.team %}
-                    {% for row in page.team %}
-                    <div class="team-row">
-                        {% for person in row %}
-                        <div class="team-column">
-                            <figure class="team-card">
-								<table>
-								<tr>
-									<td>
-									<div class="profile-image">
-										<img src="{{ person.image_url }}" alt="{{ person.name }}" />
-									</div>
-									<figcaption>
-										<h3>{{ person.name }}</h3>
-										<h5>{{ person.title }}</h5>
-										<h5>{{ person.affiliate }}</h5>
-										<div class="icons">
-											{% if person.github_user %}
-											<a href="https://github.com/{{ person.github_user }}" class="icon fa-github"></a>
-											{% endif %}
-										</div>
-									</figcaption>
-								</td>
-								<td>
-								<h3>READ</h3>
-								{{ person.readname }}
-								</td>
-								<td>
-								<h3>WATCH</h3>
-								{{ person.watchname }}
-								</td>
-								<td>
-								<h3>Listen</h3>
-								{{ person.listenname }}
-								</td>
-								</tr>
-								</table>
-                            </figure>
-                        </div>
-                        {% endfor %}
-                    </div>
-                    {% endfor %}
-                {% else %}
-                    {{ content }}
-                {% endif %}
-
-            </div>
-        </section>
-    </article>
-
-    {% include footer.html %}
-
-</body>
-
-</html>
+<!-- Main -->
+<div id="main">
+	<!-- Page -->
+	<article class="shade-two">
+	  <div class="container">
+			<header>
+				<h2>{{- page.title -}}</h2>
+				{%- if page.subtitle -%}<p>{{- page.subtitle -}}</p>{%- endif -%}
+			</header>
+	    {{- content -}}
+	  </div>
+	</article>
+</div>
