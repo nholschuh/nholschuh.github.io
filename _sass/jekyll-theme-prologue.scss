@@ -599,7 +599,7 @@
 						color: #fff;
 
 						span::before {
-							color: #33c5ff;
+							color: #3f1e8a;
 						}
 					}
 				}
@@ -653,6 +653,9 @@
 				}
 			}
 		}
+		
+		
+		
 		> section, article {
 			margin: 0;
 			overflow: hidden;
@@ -720,6 +723,35 @@
 
 	@include breakpoint(wide) {
 
+		/* homepage_header */
+		
+			div.vidoverlay {
+				position:absolute;
+				display: table-cell;
+				text-align:center;
+				vertical-align:middle;
+				width:100%;
+				height:65%;
+				top:35%;
+				z-index:1;
+				font-family: 'Source Sans Pro', sans-serif;;
+				font-size: 4em;
+				font-weight: bold;
+				color: black;
+				-webkit-text-stroke-width: 0.5px;
+				-webkit-text-stroke-color: white;
+			}
+			p.vidsub {
+				font-family: 'Source Sans Pro', sans-serif;;
+				font-size: 0.5em;
+				font-weight: bold;
+				color: white;
+				line-height: 125%;
+				-webkit-text-stroke-color: #3f1e8a;
+				-webkit-text-stroke-width: 0.1px;
+			}
+
+
 		/* Basic */
 
 			body, input, textarea, select {
@@ -750,6 +782,32 @@
 
 	@include breakpoint(normal) {
 
+			div.vidoverlay {
+				position:absolute;
+				display: table-cell;
+				text-align:center;
+				vertical-align:middle;
+				width:100%;
+				height:65%;
+				top:35%;
+				z-index:1;
+				font-family: 'Source Sans Pro', sans-serif;;
+				font-size: 4em;
+				font-weight: bold;
+				color: black;
+				-webkit-text-stroke-width: 0.5px;
+				-webkit-text-stroke-color: white;
+			}
+			p.vidsub {
+				font-family: 'Source Sans Pro', sans-serif;;
+				font-size: 0.5em;
+				font-weight: bold;
+				color: white;
+				line-height: 125%;
+				-webkit-text-stroke-color: #3f1e8a;
+				-webkit-text-stroke-width: 0.1px;
+			}
+			
 		/* Main */
 
 			#main {
@@ -777,6 +835,33 @@
 /* Narrow */
 
 	@include breakpoint(narrow) {
+
+			div.vidoverlay {
+				position:absolute;
+				display: table-cell;
+				text-align:center;
+				vertical-align:middle;
+				width:100%;
+				height:65%;
+				top:35%;
+				z-index:1;
+				font-family: 'Source Sans Pro', sans-serif;;
+				font-size: 4em;
+				font-weight: bold;
+				color: black;
+				-webkit-text-stroke-width: 0.5px;
+				-webkit-text-stroke-color: white;
+			}
+			p.vidsub {
+				font-family: 'Source Sans Pro', sans-serif;;
+				font-size: 0.25em;
+				font-weight: bold;
+				color: white;
+				line-height: 125%;
+				-webkit-text-stroke-color: #3f1e8a;
+				-webkit-text-stroke-width: 0.1px;
+			}
+			
 
 		/* Basic */
 
@@ -864,6 +949,33 @@
 
 	@include breakpoint(narrower) {
 
+			div.vidoverlay {
+				position:absolute;
+				display: table-cell;
+				text-align:center;
+				vertical-align:middle;
+				width:100%;
+				height:65%;
+				top:35%;
+				z-index:1;
+				font-family: 'Source Sans Pro', sans-serif;;
+				font-size: 2em;
+				font-weight: bold;
+				color: black;
+				-webkit-text-stroke-width: 0.5px;
+				-webkit-text-stroke-color: white;
+			}
+			p.vidsub {
+				font-family: 'Source Sans Pro', sans-serif;;
+				font-size: 0.5em;
+				font-weight: bold;
+				color: white;
+				line-height: 125%;
+				-webkit-text-stroke-color: #3f1e8a;
+				-webkit-text-stroke-width: 0.1px;
+			}
+			
+			
 		/* Basic */
 
 			html, body {
@@ -1042,6 +1154,33 @@
 /* Mobile */
 
 	@include breakpoint(mobile) {
+
+			div.vidoverlay {
+				position:absolute;
+				display: table-cell;
+				text-align:center;
+				vertical-align:middle;
+				width:100%;
+				height:65%;
+				top:35%;
+				z-index:1;
+				font-family: 'Source Sans Pro', sans-serif;;
+				font-size: 2em;
+				font-weight: bold;
+				color: black;
+				-webkit-text-stroke-width: 0.5px;
+				-webkit-text-stroke-color: white;
+			}
+			p.vidsub {
+				font-family: 'Source Sans Pro', sans-serif;;
+				font-size: 0em;
+				font-weight: bold;
+				color: white;
+				line-height: 125%;
+				-webkit-text-stroke-color: #3f1e8a;
+				-webkit-text-stroke-width: 0.1px;
+			}
+			
 
 		/* Basic */
 

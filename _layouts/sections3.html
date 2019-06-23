@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{%- assign _sections3 = site.sections3 | sort: 'order' -%}
+{%- include header.html scrolly_nav=_sections3 -%}
+<!-- Main -->
+<div id="main">
+	{%- if page.content != "" -%}
+		{%- include section3.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%}
+	{%- endif -%}
+	<!-- Sections -->
+	{%- for _section in _sections2 -%}
+		{%- include section3.html title=_section.title photo=_section.cover-photo photo-alt=_section.cover-photo-alt auto-header=_section.auto-header content=_section.content -%}
+	{%- endfor -%}
+</div>
