@@ -1,0 +1,318 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*  ============================================================================= */
+/* This section deals with the header animated panel and the titles */
+
+body {
+	font-family: "NewFont",Arial,Helvetica,sans-serif;
+	width: 100%;
+}
+
+.heropanel--video {
+    font-family:sans-serif;
+    min-height:300px;
+}
+
+@keyframes gm-slidein {
+    from {
+        -webkit-transform:translate3d(0,-100%,0);
+        opacity:0;
+        transform:translate3d(0,-100%,0);
+    }
+	
+    to {
+        -webkit-transform:none;
+        opacity:1;
+        transform:none;
+    }
+}
+
+@font-face {
+    font-family: "NewFont";
+    src: url(https://fonts.gstatic.com/s/raleway/v9/cIFypx4yrWPDz3zOxk7hIQLUuEpTyoUstqEm5AMlJo4.woff) format("woff");
+}
+@font-face {
+	font-family:'NewFont';font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/s/raleway/v9/JbtMzqLaYbbbCL9X6EvaI73hpw3pgy2gAi-Ip7WPMi0.woff) format("woff")
+}
+
+.spacer {
+	padding:1em 0 1em;
+    text-align:center;
+	background-color:transparent;
+}
+
+.spacer {
+	padding:0.5em 0 0.5em;
+    text-align:center;
+	background-color:transparent;
+}
+
+
+div.topic {
+    display: none; 
+    width: 100%;
+}
+
+div.topic div.within_content {
+	width: 100%;
+	margin: 0.5em;
+}
+
+
+p.button {
+    margin: .25em;
+    padding: .25em;   
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  margin-top: 1em;  
+  
+}
+
+div.maincontent {
+	width: 100%;
+	padding: 0;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 2em 2em 2em 2em;
+	border: 1px solid #EEEEEE;
+	box-shadow: 5px 5px 10px #777777;
+	padding: 0;
+	font-size:1em;
+	color:#000;
+	background-color: #fff;
+}
+
+
+div.maincontent2 {
+	width: 100%;
+	padding: 0.5em 0 0.5em;
+	max-width: 95%;
+	margin: 0 auto;
+}
+
+
+
+	
+table td {
+    padding: 0em 0em 0em 0em;
+	background-color: white;
+}
+	
+	p, ul, ol, dl, table {
+    margin-bottom: 0em;
+	font-size:1em;
+}
+	
+
+
+/* Styles specifically designed for the cv page of the website */
+.cv_container{
+	padding: 1em 1em 1em 1em;
+	}
+.cv{
+	font-size: 1em;
+	color:#000;
+	}
+.cv_top{
+	font-size: 1em;
+	vertical-align: middle;
+	line-height: 1em;
+	font-weight: normal;
+	color: #000;
+	padding: 20px;
+	border: solid 1px #56585b;
+	box-shadow: 5px 5px 10px #383d44;
+	}	
+.cv_section_header{
+	font-size: 1em;
+	font-weight: 800;
+	color: #000;
+	border-bottom: solid;
+	border-color: #CCC;
+	vertical-align: bottom;
+	text-align: left;
+	}
+.cv_bold{
+	font-weight: 800;
+	font-size:0.66em;
+	color: #000;
+	vertical-align: middle;
+	text-align: left;
+	line-height: 1.1em;
+	padding-bottom:0.3em;
+	}
+.cv_bold_center{
+	font-weight: 800;
+	font-size:0.66em;
+	color: #000;
+	vertical-align: bottom;
+	text-align: center;
+	line-height: 1.5em;
+	}
+.cv_date{
+	font-weight: 800;
+	font-size:0.66em;
+	color: #000;
+	vertical-align: top;
+	text-align: left;
+	line-height: 1em;
+	}	
+.cv_date2{
+	font-weight: 800;
+	font-size:0.66em;
+	color: #000;
+	vertical-align: middle;
+	text-align: left;
+	line-height: 1em;
+	padding-bottom: 2em;
+	}	
+.cv_normal{
+	font-weight: normal;
+	font-size:0.66em;
+	color: #000;
+	vertical-align: bottom;
+	text-align: left;
+	line-height: 1.2em;
+	padding-bottom: 0.2em;
+	padding-top: 0.2em;
+	}
+.conferences{
+	font-size:0.66em;
+	line-height:1em;
+	padding-bottom: 1.2em;
+	padding-right: 2em;
+	vertical-align: middle;
+}
+.cv_italic_head{
+	font-style: italic;
+	font-size: 0.66em;
+	font-weight: normal;
+	color: #000;
+	line-height:1em;
+	padding-bottom: 2em;
+	}
+.cv_italic{
+	font-style: italic;
+	font-size: 1em;
+	font-weight: normal;
+	color: #000;
+	}
+.conference_dropdown{
+	font-size: 0.66em;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 1em;
+	font-weight: normal;
+	padding: 1em 0em 1em 0em;
+	color: #000;
+	}
+.cv_content{
+	font-weight: normal;
+	font-size:0.66em;
+	color: #000;
+	vertical-align: bottom;
+	text-align: left;
+	line-height: 1em;
+	margin-bottom: 0.1em;
+	margin-top: 0.1em;
+	letter-spacing: 1;
+	}
+.cv_midalign_bold{
+	vertical-align: middle;
+	font-weight: 800;
+	font-size:0.66em;
+	color: #000;
+	text-align: left;
+	line-height: 1em;
+	}
+.cv_midalign_italic{
+	font-size: 0.66em;
+	font-style: italic;
+	line-height: 1em;
+	font-weight: normal;
+	color: #000;
+	vertical-align: middle;
+	}
+	
+
+.Regular_Text {
+	line-height: 1em;
+	font-weight: normal;
+	color: #000;
+	font-size: 0.66em;
+	font-style: normal;
+	padding: 0;
+}
+
+.Glacier_Header {
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	color: #000;
+}
+
+.Regular_Text2 {
+	font-size: 0.66em;
+	font-weight: normal;
+	color: #000;
+	font-style: normal;
+}
+.regular_text {
+	color: #000;
+	font-size: 0.66em;
+	font-weight: normal;
+}
+.Regular_text_Bold {
+	color: #000;
+	font-size: 0.66em;
+	font-style: normal;
+	line-height: 0.66em;
+	font-weight: bold;
+}
+.Raguler_Text_Bold {
+	font-size: 0.66em;
+	line-height: 0.66em;
+	font-weight: 800;
+	color: #000;
+}
+.Normal_Text_Italic {
+	font-size: 0.66em;
+	font-style: italic;
+	line-height: 1em;
+	font-weight: normal;
+	color: #000;
+	vertical-align:top;
+}
+
+.bottom_text {
+	color: #1A3380;
+	font-size: 0.66em;
+	font-weight: normal;
+	margin-left: auto;
+    margin-right: auto;
+	font-weight: bold;
+}
+
+.Info_Table {
+	background-color: white;
+	box-shadow: 5px 5px 5px #888888;
+	border: 1px solid #D1D1D1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
