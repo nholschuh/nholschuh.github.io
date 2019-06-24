@@ -182,10 +182,11 @@ table td {
 	}
 .conferences{
 	font-size:0.66em;
-	line-height:1em;
+	line-height:1.3em;
 	padding-bottom: 1.2em;
 	padding-right: 2em;
 	vertical-align: middle;
+	color: black;
 }
 .cv_italic_head{
 	font-style: italic;
@@ -214,13 +215,28 @@ table td {
 	font-weight: normal;
 	font-size:0.66em;
 	color: #000;
+	vertical-align: top;
+	text-align: left;
+	line-height: 1.2em;
+	padding-top: 0;
+	padding-bottom: 1.5em;
+	padding-left: 2.5em;
+	padding-right: 1em;
+	letter-spacing: 1;
+	}
+	
+.cv_course_content{
+	font-weight: normal;
+	font-size:0.66em;
+	color: #000;
 	vertical-align: bottom;
 	text-align: left;
-	line-height: 1em;
+	line-height: 1.2em;
 	margin-bottom: 0.1em;
 	margin-top: 0.1em;
 	letter-spacing: 1;
-	}
+	padding: 1em 1em 1em 1em;
+	}	
 .cv_midalign_bold{
 	vertical-align: middle;
 	font-weight: 800;

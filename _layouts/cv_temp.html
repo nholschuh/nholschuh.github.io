@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-{%- include header.html -%}
+{%- assign _cvs = site.cvs | sort: 'order' -%}
+{%- include header.html scrolly_nav=_cvs -%}
+
 
 <!-- Main -->
 <div id="main">
