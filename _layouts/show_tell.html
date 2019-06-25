@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+{% include head.html %}
+
+<body>
+    {% include header.html %}
+
+    <!-- Main -->
+    <article id="main">
+	<br><br>
+			<header>
+				<center><h2>{{- page.title -}}</h2></center>
+				{%- if page.subtitle -%}<p>{{- page.subtitle -}}</p>{%- endif -%}
+			</header>
+        <section class="wrapper style5">
+            <div class="inner">
+                {% if page.team %}
+                    {% for row in page.team %}
+                    <div class="team-row">
+                        {% for person in row %}
+                        <div class="team-column">
+							<table ><tr><td>
+                            <figure class="team-card">
+                                <div class="profile-image">
+                                    <img src="{{ person.image_url }}" alt="{{ person.name }}" />
+                                </div>
+                                <figcaption>
+                                    <h3>{{ person.name }}</h3>
+								</figcaption>
+								</figure>
+								
+								</td>
+								
+								<td class="team-card" style="height:100%; width:50%">
+								<div >
+                                    <h5>{{ person.title }}</h5>
+                                    <h5>{{ person.readname }}</h5> 
+									<h5>{{ person.watchname }}</h5>
+									<h5>{{ person.listenname }}</h5>
+									</div>
+								</td></tr>
+								</table>
+                            
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    {{ content }}
+                {% endif %}
+
+            </div>
+        </section>
+    </article>
+
+    {% include footer.html %}
+
+</body>
+
+</html>
