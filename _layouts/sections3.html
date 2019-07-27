@@ -4,10 +4,20 @@ layout: default
 {%- assign _sections3 = site.sections3 | sort: 'order' -%}
 {%- include header.html scrolly_nav=_sections3 -%}
 <!-- Main -->
-<div id="main">
-	{%- if page.content != "" -%}
-		{%- include section3.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%}
-	{%- endif -%}
+
+<style>
+	.Info_Table {
+	background-color: white;
+	box-shadow: 5px 5px 5px #888888;
+	padding: 20px;
+	border: 1px solid #D1D1D1;
+	width: 80%;
+	margin: auto;
+	}
+</style>
+
+
+<div id="main" class="Info_Table">
 	<!-- Sections -->
 	{%- for _section in _sections3 -%}
 		{%- include section3.html title=_section.title photo=_section.cover-photo photo-alt=_section.cover-photo-alt auto-header=_section.auto-header content=_section.content -%}

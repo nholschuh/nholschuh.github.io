@@ -19,6 +19,14 @@
 		mobile: '(max-width: 959px)'
 	));
 
+	@font-face {
+		font-family: "NewFont";
+		src: url(https://fonts.gstatic.com/s/raleway/v9/cIFypx4yrWPDz3zOxk7hIQLUuEpTyoUstqEm5AMlJo4.woff) format("woff");
+	}
+	@font-face {
+		font-family:'NewFont';font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/s/raleway/v9/JbtMzqLaYbbbCL9X6EvaI73hpw3pgy2gAi-Ip7WPMi0.woff) format("woff")
+	}
+
 	@include skel-layout((
 		reset: 'full',
 		boxModel: 'border',
@@ -60,7 +68,7 @@
 
 	body {
 		background: #fff;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: "NewFont",Arial,Helvetica,sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
@@ -72,8 +80,9 @@
 		}
 	}
 
+
 	input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: "NewFont",Arial,Helvetica,sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
@@ -202,6 +211,7 @@
 	br.clear {
 		clear: both;
 	}
+	
 
 /* Sections/Article */
 
@@ -393,7 +403,7 @@
 		tbody {
 			tr {
 				&:nth-child(2n+2) {
-					background: #f4f4f4;
+					background: #FFFFFF;
 				}
 			}
 		}
@@ -702,19 +712,19 @@
 			}
 
 			&.shade-one {
-				background-color: #81918E;
+				background-color: #FFFFFF;
 			}
 
 			&.shade-two {
-				background-color: #f5fafa;
+				background-color: #FFFFFF;
 			}
 
 			&.shade-three {
-				background-color: #ecf1f1;
+				background-color: #FFFFFF;
 			}
 
 			&.shade-four {
-				background-color: #e8edec;
+				background-color: #FFFFFF;
 			}
 		}
 	}
@@ -866,7 +876,7 @@
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 16pt;
+				font-size: 12pt;
 			}
 
 			.container {
@@ -909,7 +919,7 @@
 					list-style: none;
 					li {
 						a {
-							font-size: 0.8em;
+							font-size: 0.9em;
 							padding-top: 0.2em;
 							padding-bottom: 0.2em;
 
