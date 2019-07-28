@@ -1279,6 +1279,14 @@
 	padding: 0 8px;
 }
 
+/* Three columns side by side */
+.team-column2 {
+	float: left;
+	width: 100%;
+	margin-bottom: 16px;
+	padding: 0 8px;
+}
+
 /* Display the columns below each other instead of side by side on small screens */
 @media (max-width: 650px) {
 	.team-column {
@@ -1290,16 +1298,24 @@
 /* Add some shadows to create a card effect */
 .team-card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	position: relative;
-	display: inline-block;
-	overflow: hidden;
 	margin: 8px;
 	min-width: 250px;
 	max-width: 310px;
-	width: 100%;
+	width: 33%;
 	background-color: #ffffff;
 	color: #2B2B2B;
 	text-align: center;
+	font-size: 16px;
+}
+.team-card2 {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: 8px;
+	width: 66%;
+	vertical-align: middle;
+	max-height: 100px;
+	background-color: #ffffff;
+	color: #2B2B2B;
+	text-align: left;
 	font-size: 16px;
 }
 
