@@ -768,6 +768,12 @@
 				border: 1px solid #D1D1D1;
 				width: 80%;
 				margin: auto;
+				overflow: auto;
+			}
+			.Research_Fig {
+				max-width:400px;
+				float: right; 
+				margin:0em 2em 2em 2em;
 			}
 			
 		/* Basic */
@@ -832,6 +838,7 @@
 				border: 1px solid #D1D1D1;
 				width: 80%;
 				margin: auto;
+				overflow: auto;
 			}
 			
 		/* Main */
@@ -892,8 +899,14 @@
 				box-shadow: 5px 5px 5px #888888;
 				padding: 1em;
 				border: 1px solid #D1D1D1;
-				width: 100%;
-			}				
+				width: 80%;
+				overflow: auto;
+			}	
+			.Research_Fig {
+				max-width:400px;
+				float: right; 
+				margin:0em 2em 2em 2em;
+			}
 
 		/* Basic */
 
@@ -1013,7 +1026,13 @@
 				padding: 1em;
 				border: 1px solid #D1D1D1;
 				width: 100%;
+				overflow: auto;
 			}			
+			.Research_Fig {
+				width:100%;
+				float: right; 
+				margin:0em 2em 2em 2em;
+			}
 			
 		/* Basic */
 
@@ -1219,7 +1238,11 @@
 				-webkit-text-stroke-color: #3f1e8a;
 				-webkit-text-stroke-width: 0.1px;
 			}
-			
+			.Research_Fig {
+				width:100%;
+				float: right; 
+				margin:0em 2em 2em 2em;
+			}			
 
 		/* Basic */
 
