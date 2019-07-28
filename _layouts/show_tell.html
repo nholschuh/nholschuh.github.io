@@ -23,9 +23,12 @@
                     {% for row in page.team %}
                     <div class="team-row">
                         {% for person in row %}
-                        <div class="team-column">
-							<table ><tr><td>
-                            <figure class="team-card">
+                        <div class="team-column2">
+							<center>
+							<table style="width:90%">
+							<tr style="width:100%">
+							<td class="team-card">
+								<figure>
                                 <div class="profile-image">
                                     <img src="{{ person.image_url }}" alt="{{ person.name }}" />
                                 </div>
@@ -34,18 +37,18 @@
 								</figcaption>
 								</figure>
 								
-								</td>
+							</td>
 								
-								<td class="team-card" style="height:100%; width:50%">
-								<div >
+								<td class="team-card2">
                                     <h5>{{ person.title }}</h5>
                                     <h5>{{ person.readname }}</h5> 
 									<h5>{{ person.watchname }}</h5>
 									<h5>{{ person.listenname }}</h5>
-									</div>
-								</td></tr>
+								</td>
+								
+								</tr>
 								</table>
-                            
+                            </center>
                         </div>
                         {% endfor %}
                     </div>
