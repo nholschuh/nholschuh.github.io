@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+{%- include header.html scrolly_nav=_cvs -%}
+
+
+<!-- Main -->
+<div id="main">
+	<!-- Page -->
+	<article class="shade-two">
+	  <div class="container">
+			<header>
+				<center><h2>{{- page.title -}}</h2></center>
+				{%- if page.subtitle -%}<p>{{- page.subtitle -}}</p>{%- endif -%}
+			</header>
+	    {{- content -}}
+	  </div>
+	</article>
+</div>
