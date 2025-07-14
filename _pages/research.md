@@ -2,7 +2,7 @@
 title: Research Projects
 subtitle: 
 description: Research Projects
-featured_image: /images/MenuBar/Menu2.jpg
+featured_image: https://githubdatafiles.s3.us-east-1.amazonaws.com/images/MenuBar/Menu2.jpg
 ---
 
 Glaciers sit in contact with the atmosphere, the ocean, and the solid Earth. To predict their behavior over the coming centuries, we need to understand how the fast-changing atmosphere and ocean are responding to human caused global warming, as these systems “force” changes to glaciers. But knowledge of the forcing is not enough. The response of the glaciers to global warming is equally dictated by their internal dynamics and the way they interact with the rock that forms their substrate, both of which are poorly understood. My research aims to advance our understanding of the physics of glaciers, with three primary goals:
