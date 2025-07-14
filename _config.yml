@@ -1,0 +1,71 @@
+site: Journal Jekyll Theme
+
+exclude:
+  - "*.ipynb"
+  - "*.zip"
+  - NDH_Readme.txt
+
+url: 
+baseurl: 
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /blog/:slug
+  photodir:
+    output: true
+    permalink: /photodir/:slug/
+  courses:
+    output: true
+    permalink: /courses/:slug/
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "courses"
+    values:
+      layout: "project"
+  -
+    scope:
+      path: ""
+      type: "photodir"
+    values:
+      layout: "project"
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+paginate: 6
+paginate_path: "/blog/page:num/"
+  

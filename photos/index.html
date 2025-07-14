@@ -1,0 +1,48 @@
+---
+layout: default
+title: Photos
+subtitle: Field Photos from Past Field Projects
+description: Nick Holschuhu Field Photos
+featured_image: /images/MenuBar/Menu5.jpg
+---
+
+<section class="intro">
+
+	<div class="wrap">
+
+		<h1>{{ page.title }}</h1>
+		<p>{{ page.subtitle }}</p>
+
+	</div>
+
+</section>
+
+<section class="portfolio" style="text-align: center;">
+
+	<div class="wrap">
+
+		{% for project in site.photodir reversed %}
+
+		<div class="portfolio-item" >
+
+			<a class="portfolio-item__link" href="{{ project.url | relative_url }}">
+
+				<div class="portfolio-item__image" 
+				style="background-image: url({{ project.featured_image | relative_url }});"></div>
+
+				<div class="portfolio-item__content">
+					<div class="portfolio-item__info">
+						<h2 class="portfolio-item__title">{{ project.title }}</h2>
+						<p class="portfolio-item__subtitle">{{ project.subtitle }}</p>
+					</div>
+				</div>
+
+			</a>
+
+		</div>
+
+		{% endfor %}
+
+	</div>
+
+</section>
